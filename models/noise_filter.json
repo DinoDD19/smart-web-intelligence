@@ -1,0 +1,23 @@
+{
+    "selectors": [
+        "aside",
+        ".ad",
+        ".ads",
+        ".advertisement",
+        ".social-share",
+        ".popup",
+        ".subscribe-widget",
+        ".cookie-consent",
+        "footer",
+        ".sidebar",
+        ".promoted"
+    ],
+    "keywords": [
+        "subscribe",
+        "sign up",
+        "advertisement",
+        "promoted",
+        "sponsored",
+        "buy now"
+    ]
+}

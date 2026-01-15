@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Web Intelligence</title>
+    <!-- Vanila CSS implementation of the user's design -->
+    <link href="popup.css" rel="stylesheet">
+    <!-- Google Fonts loaded locally or assumed to be system fonts for privacy/speed, 
+         but we'll include the link for now as most extensions allow remote fonts if specified in CSP 
+         (Manifest V3 is strict, so we fallback to system fonts if blocked). -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-light">
+    <!-- Main Container -->
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">shield_with_heart</span>
+                </div>
+                <h2>Smart Web Intelligence</h2>
+            </div>
+            <div class="actions">
+                <span id="open-settings" class="material-symbols-outlined icon-btn" title="Settings">settings</span>
+            </div>
+        </header>
+
+        <!-- Headline -->
+        <div class="headline">
+            <h3>Select Mode</h3>
+            <p>Choose how the assistant interacts with this page.</p>
+        </div>
+
+        <!-- Mode Selector -->
+        <div class="mode-list">
+            <!-- Study Mode -->
+            <label class="mode-card" data-mode="study">
+                <div class="mode-icon bg-blue">
+                    <span class="material-symbols-outlined">auto_stories</span>
+                </div>
+                <div class="mode-info">
+                    <p class="mode-title">Study Mode</p>
+                    <p class="mode-desc">Highlight syllabus topics and concepts.</p>
+                </div>
+                <input type="radio" name="mode-selection" value="study">
+                <div class="radio-indicator"></div>
+            </label>
+
+            <!-- Career Mode -->
+            <label class="mode-card" data-mode="career">
+                <div class="mode-icon bg-green">
+                    <span class="material-symbols-outlined">work</span>
+                </div>
+                <div class="mode-info">
+                    <p class="mode-title">Career Mode</p>
+                    <p class="mode-desc">Extract skills from job descriptions.</p>
+                </div>
+                <input type="radio" name="mode-selection" value="career">
+                <div class="radio-indicator"></div>
+            </label>
+
+            <!-- Clean Reading Mode -->
+            <label class="mode-card" data-mode="clean">
+                <div class="mode-icon bg-purple">
+                    <span class="material-symbols-outlined">menu_book</span>
+                </div>
+                <div class="mode-info">
+                    <p class="mode-title">Clean Reading</p>
+                    <p class="mode-desc">Remove ads and distractions.</p>
+                </div>
+                <input type="radio" name="mode-selection" value="clean">
+                <div class="radio-indicator"></div>
+            </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons">
+            <button id="apply-btn" class="btn btn-primary">
+                <span class="material-symbols-outlined">bolt</span>
+                Apply to Page
+            </button>
+            <button id="disable-btn" class="btn btn-secondary">
+                <span class="material-symbols-outlined">block</span>
+                Disable
+            </button>
+        </div>
+
+        <!-- Results Area (Hidden by default, shown for feedback) -->
+        <div id="results-feedback" class="results-area hidden">
+            <!-- Dynamic content injected by JS -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="privacy-badge">
+                <span class="material-symbols-outlined text-xs">lock</span>
+                <p>Runs locally. No data leaves your browser.</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

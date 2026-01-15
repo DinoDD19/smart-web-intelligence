@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Web Intelligence - Settings</title>
+    <link href="options.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-light">
+    <!-- Extension Container -->
+    <div class="settings-container">
+
+        <!-- Header -->
+        <header class="settings-header">
+            <div class="header-left">
+                <!-- Back button mostly symbolic if opened in new tab, but can close tab -->
+                <button id="close-btn" class="icon-btn-round" title="Close">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <h2>Settings</h2>
+            </div>
+            <div class="header-right">
+                <span class="material-symbols-outlined text-muted">settings</span>
+            </div>
+        </header>
+
+        <div class="settings-content">
+            <!-- Section: General Status -->
+            <div class="section-box">
+                <div class="status-card">
+                    <div class="status-info">
+                        <p class="status-title">Extension Active</p>
+                        <p class="status-desc">Quickly pause all ML processing</p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked id="extension-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Section: Interaction Modes (Default) -->
+            <div class="section-header">Interaction Modes</div>
+            <div class="section-body">
+                <label class="form-control">
+                    <p class="label-text">Default Mode</p>
+                    <select id="default-mode-select" class="custom-select">
+                        <option value="null">None (Manual Activation)</option>
+                        <option value="study">Study Mode</option>
+                        <option value="career">Career Mode</option>
+                        <option value="clean">Clean Reading</option>
+                    </select>
+                </label>
+                <p class="help-text">Sets the default ML filter profile when you open a new tab.</p>
+            </div>
+
+            <!-- Section: Syllabus (Preserved functionality) -->
+            <div class="section-header">Study Mode Data</div>
+            <div class="section-body">
+                <label class="form-control">
+                    <p class="label-text">Syllabus Keywords</p>
+                    <textarea id="syllabus-input" class="custom-textarea"
+                        placeholder="Data Structures, Algorithms..."></textarea>
+                </label>
+                <p class="help-text">Keywords to highlight in Study Mode.</p>
+                <button id="save-syllabus" class="btn-small">Save Syllabus</button>
+                <span id="save-status" class="status-msg"></span>
+            </div>
+
+            <!-- Section: Data -->
+            <div class="section-header">Privacy & Data</div>
+            <div class="section-body mb-6">
+                <div class="data-row">
+                    <div class="data-info">
+                        <p class="data-title">Clear Cache</p>
+                        <p class="data-desc">Remove locally stored ML models</p>
+                    </div>
+                    <button class="btn-outline">Clear</button>
+                </div>
+                <div class="data-row border-top">
+                    <div class="data-info">
+                        <p class="data-title text-red">Reset All Data</p>
+                        <p class="data-desc">This action is permanent</p>
+                    </div>
+                    <button class="btn-outline text-red hover-red">Reset</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="settings-footer">
+                <p>Version 2.0.0 (Local)</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

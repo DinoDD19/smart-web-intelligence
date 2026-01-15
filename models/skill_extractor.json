@@ -1,0 +1,74 @@
+{
+    "categories": {
+        "Languages": [
+            "Python",
+            "JavaScript",
+            "TypeScript",
+            "Java",
+            "C\\+\\+",
+            "Go",
+            "Rust",
+            "Swift",
+            "Kotlin",
+            "PHP",
+            "Ruby"
+        ],
+        "Frontend": [
+            "React",
+            "Vue",
+            "Angular",
+            "Svelte",
+            "HTML",
+            "CSS",
+            "Tailwind",
+            "Bootstrap",
+            "Redux",
+            "Webpack",
+            "Vite"
+        ],
+        "Backend": [
+            "Node\\.js",
+            "Django",
+            "Flask",
+            "FastAPI",
+            "Spring",
+            "Express",
+            "NestJS",
+            "GraphQL",
+            "REST API"
+        ],
+        "Database": [
+            "SQL",
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "Redis",
+            "Elasticsearch",
+            "Firebase",
+            "Supabase"
+        ],
+        "DevOps": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Azure",
+            "GCP",
+            "CI/CD",
+            "Jenkins",
+            "Git",
+            "GitHub",
+            "GitLab"
+        ],
+        "AI/ML": [
+            "TensorFlow",
+            "PyTorch",
+            "Scikit-learn",
+            "Pandas",
+            "NumPy",
+            "OpenCV",
+            "NLP",
+            "LLM",
+            "Hugging Face"
+        ]
+    }
+}
